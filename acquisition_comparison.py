@@ -12,6 +12,7 @@ Created on Tue Feb 14 15:21:45 2023
 
 import argparse
 import logging
+import numpy as np
 
 import pyqtgraph as pg
 from pyqtgraph.Qt import QtCore, QtWidgets
@@ -66,18 +67,31 @@ class Graph:
         else:
             self.channel_labels = BoardShim.get_eeg_names(self.board_id)
         self.update_speed_ms = 50
-        self.window_size = 2
+        self.window_size = 4
         self.num_points = self.window_size * self.sampling_rate
         
         self.app = QtWidgets.QApplication([])
+        self.app.setAttribute(QtCore.Qt.AA_Use96Dpi)
         self.win = pg.GraphicsLayoutWidget(title='EEG data', show=True, size=(1280, 720)) # Convenience class consisting of a GraphicsView with a single GraphicsLayout as its central item.
 
+        self._init_pens()
         self._init_timeseries()
 
         timer = QtCore.QTimer()
         timer.timeout.connect(self.update)
         timer.start(self.update_speed_ms)
         QtWidgets.QApplication.instance().exec_()
+
+    def _init_pens(self):
+
+        # Graph customization
+
+        self.pens = list()
+        self.colors = ['#A54E4E', '#A473B6', '#5B45A4', '#2079D2', '#32B798', '#2FA537', '#9DA52F', '#A57E2F', '#A53B2F'] # Hex
+        self.col_sz = len(self.colors)
+        for i in range(len(self.colors)):
+            pen = pg.mkPen({'color': self.colors[i], 'width': 2}) # mkPen refers to the outline of a shape object. mkBrush is to fill the shapes (e.g., histograms)
+            self.pens.append(pen)
 
     def _init_timeseries(self):
         
@@ -87,32 +101,29 @@ class Graph:
     
         self.plots = list()
         self.curves = list()
-        sz = len(self.channel_labels)
-        for i in range(sz):
-            const = 5
-            col = (255-const*i,(0+const)*i,(0+const)*i)
-            pen = pg.mkPen(color=col)
+        self.sz = len(self.channel_labels)
+        for i in range(self.sz):
             p = self.win.addPlot(row=i, col=0) # Object of each plot
             p.showAxis('left', False)
             p.setMenuEnabled('left', False)
-            if i != sz:
+            if i < self.sz-1:
                 p.showAxis('bottom', False)
             else:
                 p.showAxis('bottom', True)
                 p.setLabel('bottom','Time (ms)')
             p.setMenuEnabled('bottom', False)
-            p.setTitle(self.channel_labels[i], color = col, size = "12pt")
+            p.setTitle(self.channel_labels[i], color = self.colors[i % self.col_sz], size = "12pt")
             self.plots.append(p)
-            curve = p.plot(pen = pen)
+            curve = p.plot(pen = self.pens[i % self.col_sz])
             self.curves.append(curve)
-
+    
     def update(self):
         
         # This method is called at regular intervals by the QTimer created in the constructor
         # Finally, it updates the curves with the filtered data and processes any pending events in the application event loop using app.processEvents()
         
         data = self.board_shim.get_current_board_data(self.num_points) # Gets data from the board
-        
+
         for count, channel in enumerate(self.eeg_channels):
             
             DataFilter.detrend(data[channel], DetrendOperations.CONSTANT.value)
@@ -123,7 +134,7 @@ class Graph:
             DataFilter.perform_bandstop(data[channel], self.sampling_rate, 58.0, 62.0, 2,
                                      FilterTypes.BUTTERWORTH.value, 0)
             self.curves[count].setData(data[channel].tolist()) # setData is the method that updates the graph from the initial plot object reference
-            
+        
         self.app.processEvents()
 
 def main():
