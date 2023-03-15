@@ -106,6 +106,8 @@ class Graph:
             p = self.win.addPlot(row=i, col=0) # Object of each plot
             p.showAxis('left', False)
             p.setMenuEnabled('left', False)
+            p.setYRange(-100,100)
+            p.setMouseEnabled(x = False, y = False)
             if i < self.sz-1:
                 p.showAxis('bottom', False)
             else:
@@ -116,7 +118,7 @@ class Graph:
             self.plots.append(p)
             curve = p.plot(pen = self.pens[i % self.col_sz])
             self.curves.append(curve)
-    
+                    
     def update(self):
         
         # This method is called at regular intervals by the QTimer created in the constructor
