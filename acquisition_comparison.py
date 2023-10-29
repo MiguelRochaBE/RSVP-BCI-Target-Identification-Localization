@@ -138,6 +138,7 @@ class Graph:
             self.curves[count].setData(data[channel].tolist()) # setData is the method that updates the graph from the initial plot object reference
         
         self.app.processEvents()
+        #print(data[self.eeg_channels])
 
 def main():
     BoardShim.enable_dev_board_logger()
