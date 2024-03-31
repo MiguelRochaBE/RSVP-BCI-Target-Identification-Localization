@@ -37,8 +37,8 @@ import random
 
 ''' Important protocol variables '''
 
-EOG_Screen_TIME = 15.0
-EMG_Screen_TIME = 15.0
+EOG_Screen_TIME = 16.0
+EMG_Screen_TIME = 16.0
 N_TrialBlocks = 14.0
 ITI = 0.2 # Inter-Trial Interval (s)
 
@@ -419,7 +419,7 @@ for thisComponent in Instructions_ScreenComponents:
         thisComponent.setAutoDraw(False)
 # check responses
 if instructions_space.keys in ['', [], None]:  # No response was made
-    instructions_space.keys = None
+    instructions_space.keys = Non10
 # the Routine "Instructions_Screen" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
@@ -427,7 +427,7 @@ routineTimer.reset()
 continueRoutine = True
 # update component parameters for each repeat
 # keep track of which components have finished
-EOG_ScreenComponents = [EOG_text]
+EOG_ScreenComponents = [EOG_text, stim_square_EOG]
 for thisComponent in EOG_ScreenComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -542,7 +542,7 @@ else:
 continueRoutine = True
 # update component parameters for each repeat
 # keep track of which components have finished
-EMG_ScreenComponents = [EMG_text]
+EMG_ScreenComponents = [EMG_text, stim_square_EMG]
 for thisComponent in EMG_ScreenComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -951,14 +951,17 @@ for thisTrial_block in trial_block:
         trialImage.setImage(imgs[trial_count ])
         print("Image: ",imgs[trial_count ], " || Condition: ", stims[trial_count], " || Count: ", trial_count )
         if stims[trial_count] == 'Target': # Changes color of the stimulus depending on its class: target/non-target
-            stim_square.color = [1,1,1]
+            stim_square.lineColor = [1,1,1]
+            stim_square.fillColor = [1,1,1]
         elif stims[trial_count] == 'NonTarget': 
             non_target_count -= 1
             # Because there are no blank spaces between the images, a diferentiation between two consecutive non-targets is necessary
             if(non_target_count % 2 == 0 or non_target_count == 0):
-                stim_square.color = [-0.5 , -0.5, -0.5]
+                stim_square.fillColor = [-0.25, -0.25, -0.25]
+                stim_square.lineColor = [0, 0, 0]
             else:
-                stim_square.color = [-0.75, -0.75, -0.75]
+                stim_square.fillColor = [-0.75, -0.75, -0.75]
+                stim_square.lineColor = [-0.75, -0.75, -0.75]
 
         if(trial_count == len(reorganized_df) - 1): 
             # Protection against crashes (Sometimes a trial gets "eaten" with this correction algor. Its rare though )
@@ -1074,6 +1077,7 @@ for thisTrial_block in trial_block:
                 win.flip()
         
         # --- Ending Routine "trial" ---
+
         for thisComponent in trialComponents:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
@@ -1087,6 +1091,7 @@ for thisTrial_block in trial_block:
     
     
     # --- Prepare to start Routine "trial_BlockScreen" ---
+
     continueRoutine = True
     # update component parameters for each repeat
     trial_Blocktext.setText(f"When you are ready to start the next trial block, press the SPACEBAR!")
