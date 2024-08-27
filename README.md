@@ -50,9 +50,9 @@ Because the results were identical and sometimes even better in the Testing imag
 
 **Hardware development:**
 
-A PCB was also designed to interface the EEG amplifier and the monitor where the images are presented, thus enabling the segmentation of each response in the continuous EEG. Additionally, the PCB encapsulation and piece to fix the circuit to the monitor was also designed an 3D printed.
+A PCB was also designed to interface the EEG amplifier and the monitor where the images are presented, thus enabling the segmentation of each response in the continuous EEG. Additionally, the PCB encapsulation and a piece to fix the circuit to the monitor was also designed and 3D printed.
 
-<img width="600" alt="PCBonMonitor" src="https://github.com/user-attachments/assets/69a51014-9f9b-4e80-9d57-2c6a6e2aa97a">
+<img width="500" alt="PCBonMonitor" src="https://github.com/user-attachments/assets/69a51014-9f9b-4e80-9d57-2c6a6e2aa97a">
 
 
 
