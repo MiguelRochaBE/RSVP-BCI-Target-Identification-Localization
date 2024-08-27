@@ -12,11 +12,13 @@ The images simulating search and rescue scenarios were captured with a drone and
 
 The BCI user visualizing the images will only need to be contextualized by the target type he is searching for in the stimuli. This is essential so that users can construct a visual representation within the working memory of the object required to be searched to properly allocate neural mechanisms related to the focus of attention for this object only. In this case, they were asked to visually search humans lying down. Then, specific ERPs related to visual attention are decoded to firstly detect the presence of the Target human and secondly, its location within the image along the horizontal and vertical dimensions and subsequently, the environment.
 
-<img width="800" alt="SystArch" src="https://github.com/user-attachments/assets/1063afcd-1e7c-4f8b-8edf-1c8423300c11">
+<img width="800" alt="SystArch" src="https://github.com/user-attachments/assets/e3fcb18e-c48f-455b-8895-fa7ce5be11ae">
 
 **EEG Acquisition parameters:** 
 
 <img width="800" alt="EEG_dataset" src="https://github.com/user-attachments/assets/4032ff0a-e43b-4981-afc8-6f5c607fd36e">
+
+**Main Results**
 
 These results indicate that this type of high-frame rate BCI system (hybrid, using human observers and ML techniques on the measured brain potentials) seems to generalize well when using N2pc and P3 ERPs. Thus, we believe we have carried out a proof of concept that this type of system can be used in real search and rescue scenarios, adding fast target detection to its location in the image and with the potential to have better performance and generalization capabilities than other computational approaches, demanding much less resources.
 
