@@ -8,7 +8,7 @@ In this thesis, a BCI system was developed in the context of aerial visual searc
 
 To test this approach, two independent Rapid Serial Visual Presentation (RSVP) paradigms were designed and presented separately to 6 subjects after obtaining authorization from the institutional ethics committee for this human experimentation. These two paradigms were designed with very different characteristics, namely a different set of environments/terrain and human target characteristics, including its clothes and the distribution of their centroids within the images. The first paradigm (240 images with 24 targets) was used to train/validate the machine learning (ML) models and the second (160 images with 16 targets) was used exclusively to test them. In addition, the second paradigm was seen for the first time by the 6 subjects during the procedure, allowing the evaluation of the brain’s ability to discriminate targets in an unknown and unseen environment and human target characteristics. Customized ML models (specific to each subject) and generalized models (trained with the data of all subjects for the first paradigm and tested with the second) were tested.
 
-**System Architecture:**
+# **System Architecture:**
 
 The images simulating search and rescue scenarios were captured with a drone and then saved in a computer for image presentation. Despite being tested offline, this approach can be extrapolated to real-time scenarios where a drone will capture images of the environment and transfer them wirelessly to a computer iteratively, which is the ultimate application of BCIs. If the height of the drone is properly correlated with its velocity, 2 consecutive images captured will omit redundant space within the environment between those 2 images.
 
@@ -20,9 +20,9 @@ The BCI user visualizing the images will only need to be contextualized by the t
 
 <img width="800" alt="EEG_dataset" src="https://github.com/user-attachments/assets/4032ff0a-e43b-4981-afc8-6f5c607fd36e">
 
-**Main Results:**
+# **Main Results:**
 
-***Target (Sensitivity) vs Non-Target (Sensibility) classification:***
+## ***Target (Sensitivity) vs Non-Target (Sensibility) classification:***
 
 Model row legend:
 
@@ -36,19 +36,19 @@ BC - Best channels selected for each ERP
 
 <img width="800" alt="T_vs_NT" src="https://github.com/user-attachments/assets/849e34cd-0663-4ad7-a9ab-55099cc1668c">
 
-***Right Visual Field (RVF) vs Left Visual Field (LVF) Target classification:***
+## ***Right Visual Field (RVF) vs Left Visual Field (LVF) Target classification:***
 
 <img width="800" alt="n2pc" src="https://github.com/user-attachments/assets/8350db4e-2f95-4234-90a2-a9059226e7dc">
 
-***Lateral Target centroid estimation (Neural Network) for one subject:***
+## ***Lateral Target centroid estimation (Neural Network) for one subject:***
 
 <img width="800" alt="S1_x_estim" src="https://github.com/user-attachments/assets/3d45e906-08b9-4eeb-a15f-b13ca9718b30">
 
-**Conclusion:**
+# **Conclusion:**
 
 Because the results were identical and sometimes even better in the Testing images than in the Training images, these indicate that this type of high-frame-rate BCI system (hybrid, using human observers and ML techniques on the measured brain potentials) seems to generalize well when using N2pc and P3 ERPs. 
 
-**Hardware development:**
+# **Hardware development:**
 
 A PCB was also designed to interface the EEG amplifier and the monitor where the images are presented, thus enabling the segmentation of each response in the continuous EEG. Additionally, the PCB encapsulation and a piece to fix the circuit to the monitor was also designed and 3D printed.
 
