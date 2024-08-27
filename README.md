@@ -1,5 +1,7 @@
 Project developed during my Master's Thesis in Biomedical Engineering at FEUP (FEUP_Dissertation_MiguelRocha_2024)
 
+Some concepts detailed here were firstly tested with an online dataset comprising EEG data recorded in a similar paradigm, whose study is presented in PTL.pdf.
+
 **Goal:**
 
 In this thesis, a BCI system was developed in the context of aerial visual search, accelerating target detection (in this case identification of humans) in a vast open field environment covered by drone images. This detection is carried out at a high frame rate (5 images per second) by analyzing the time domain of the Electroencephalogram of human observers. For this purpose, Event-Related Potentials (ERPs) associated with visual attention neural mechanisms, namely N2pc, N2pcb and P3, elicited by an object of interest within the images were used. Additionally, the use of N2pc and N2pcb was tested to estimate the location of the human target within the image in the horizontal (left vs. right) and vertical (top vs. bottom) dimensions, respectively.
@@ -18,7 +20,37 @@ The BCI user visualizing the images will only need to be contextualized by the t
 
 <img width="800" alt="EEG_dataset" src="https://github.com/user-attachments/assets/4032ff0a-e43b-4981-afc8-6f5c607fd36e">
 
-**Main Results**
+**Main Results:**
 
-These results indicate that this type of high-frame rate BCI system (hybrid, using human observers and ML techniques on the measured brain potentials) seems to generalize well when using N2pc and P3 ERPs. Thus, we believe we have carried out a proof of concept that this type of system can be used in real search and rescue scenarios, adding fast target detection to its location in the image and with the potential to have better performance and generalization capabilities than other computational approaches, demanding much less resources.
+***Target (Sensitivity) vs Non-Target (Sensibility) classification:***
+
+Model row legend:
+
+SG - Subject Generalized
+
+SS - Subject Specific
+
+AC - All ERP channels model variation
+
+BC - Best channels selected for each ERP
+
+<img width="800" alt="T_vs_NT" src="https://github.com/user-attachments/assets/849e34cd-0663-4ad7-a9ab-55099cc1668c">
+
+***Right Visual Field vs Left Visual Field target classification:***
+
+<img width="800" alt="n2pc" src="https://github.com/user-attachments/assets/8350db4e-2f95-4234-90a2-a9059226e7dc">
+
+***Lateral Target centroid estimation (Neural Network) for one subject:***
+
+<img width="800" alt="S1_x_estim" src="[https://github.com/user-attachments/assets/8350db4e-2f95-4234-90a2-a9059226e7dc](https://github.com/user-attachments/assets/3d45e906-08b9-4eeb-a15f-b13ca9718b30)">
+
+**Conclusion:**
+
+Because the results were identical and sometimes even better in the Testing images than in the Training images, these indicate that this type of high-frame-rate BCI system (hybrid, using human observers and ML techniques on the measured brain potentials) seems to generalize well when using N2pc and P3 ERPs. 
+
+**Hardware development:**
+
+A PCB was also designed to interface the EEG amplifier and the monitor where the images are presented, thus enabling the segmentation of each response in the continuous EEG. Additionally, the PCB encapsulation and piece to fix the circuit to the monitor was also designed an 3D printed.
+
+![PCBonMonitor](https://github.com/user-attachments/assets/69a51014-9f9b-4e80-9d57-2c6a6e2aa97a)
 
