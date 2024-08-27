@@ -2,7 +2,7 @@ Project developed during my Master's Thesis in Biomedical Engineering at FEUP (F
 
 Some concepts detailed here were firstly tested with an online dataset comprising EEG data recorded in a similar paradigm, whose study is presented in PTL.pdf.
 
-**Goal:**
+**#Goal:**
 
 In this thesis, a BCI system was developed in the context of aerial visual search, accelerating target detection (in this case identification of humans) in a vast open field environment covered by drone images. This detection is carried out at a high frame rate (5 images per second) by analyzing the time domain of the Electroencephalogram of human observers. For this purpose, Event-Related Potentials (ERPs) associated with visual attention neural mechanisms, namely N2pc, N2pcb and P3, elicited by an object of interest within the images were used. Additionally, the use of N2pc and N2pcb was tested to estimate the location of the human target within the image in the horizontal (left vs. right) and vertical (top vs. bottom) dimensions, respectively.
 
