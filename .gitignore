@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+eeg_signals_from_an_rsvp_task_1.0.0
+EEG Data
+
 # Distribution / packaging
 .Python
 build/

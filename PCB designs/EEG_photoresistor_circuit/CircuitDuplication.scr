@@ -1,0 +1,59 @@
+# PCAD layers:
+#Layer = 'Top Assy' 10 NonSignal
+#Layer = 'Top Silk' 6 NonSignal
+#Layer = 'Top Paste' 8 NonSignal
+#Layer = 'Top Mask' 4 NonSignal
+#Layer = 'TOP' 1 Signal
+#Layer = 'Bottom' 2 Signal
+#Layer = 'Bot Mask' 5 NonSignal
+#Layer = 'Bot Paste' 9 NonSignal
+#Layer = 'Bot Silk' 7 NonSignal
+#Layer = 'Bot Assy' 11 NonSignal
+#Layer = 'Board' 3 NonSignal
+#Layer = 'MECH10' 21 NonSignal
+#Layer = 'MECH13' 22 NonSignal
+#Layer = 'MECH15' 23 NonSignal
+#
+# Library header:
+SET CONFIRM YES;
+REMOVE 'C:/Users/migue/OneDrive/Ambiente de Trabalho/Tese/PCB designs/EEG_photoresistor/CircuitDuplication.lbr';
+SET CONFIRM OFF;
+OPEN 'C:/Users/migue/OneDrive/Ambiente de Trabalho/Tese/PCB designs/EEG_photoresistor/CircuitDuplication.lbr';
+SET WIRE_BEND 2;
+SET OPTIMIZING OFF;
+#
+#PadStyleDef "(Default)"
+#HoleDiameter = 30.000000
+#  PadShape: layerNumRef = 1 padShapeType = Oval shapeWidth = 60.000000 shapeHeight = 60.000000
+#  PadShape: layerNumRef = 2 padShapeType = Oval shapeWidth = 60.000000 shapeHeight = 60.000000
+#skips because of layer.
+#skips because of layer.
+#skips because of layer.
+#ViaStyleDef "(Default)"
+#HoleDiameter = 0.7112mm
+#  ViaShape: layerNumRef = 1 viaShapeType = Ellipse shapeWidth = 50.000000 shapeHeight = 50.000000
+#  ViaShape: layerNumRef = 2 viaShapeType = Ellipse shapeWidth = 50.000000 shapeHeight = 50.000000
+# Packages:
+# Symbols:
+# Devices:
+# Dummy devices: 0
+WRITE;
+CLOSE;
+# ***** Board *****
+EDIT 'C:/Users/migue/OneDrive/Ambiente de Trabalho/Tese/PCB designs/EEG_photoresistor/CircuitDuplication.PCB.brd';
+DRC LOAD 'C:/Users/migue/OneDrive/Ambiente de Trabalho/Tese/PCB designs/EEG_photoresistor/CircuitDuplication.dru';
+SET WIRE_BEND 2;
+USE -* 'C:/Users/migue/OneDrive/Ambiente de Trabalho/Tese/PCB designs/EEG_photoresistor/CircuitDuplication.lbr';
+GRID mil;
+SET OPTIMIZING ON;
+SET CONFIRM YES;
+CHANGE FONT VECTOR;
+# LayerContents
+# layerNumRef = 11
+CHANGE LAYER 22;
+WIRE 0.5mm (1000.000000 1000.000000) (4327.559055 1000.000000);
+WIRE 0.5mm (1000.000000 1000.000000) (1000.000000 3283.464567);
+WIRE 0.5mm (1000.000000 3283.464567) (4327.559055 3283.464567);
+WIRE 0.5mm (4327.559055 3283.464567) (4327.559055 1000.000000);
+WINDOW FIT;
+SET CONFIRM OFF;

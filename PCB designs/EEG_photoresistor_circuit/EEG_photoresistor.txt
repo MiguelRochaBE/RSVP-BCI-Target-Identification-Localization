@@ -1,0 +1,10 @@
+Board Information Report
+Filename     : C:\Users\migue\OneDrive\Ambiente de Trabalho\Tese\PCB designs\EEG_photoresistor\EEG_photoresistor.PcbDoc
+Date         : 19/02/2024
+Time         : 16:27:42
+Time Elapsed : 00:00:00
+
+General
+    Board Size, 84.5201mmx58.0054mm
+    Components on board, 30
+count : 2

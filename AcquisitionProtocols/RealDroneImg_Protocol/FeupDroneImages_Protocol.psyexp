@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2023.1.3">
+  <Settings>
+    <Param val="3" valType="str" updates="None" name="Audio latency priority"/>
+    <Param val="ptb" valType="str" updates="None" name="Audio lib"/>
+    <Param val="" valType="str" updates="None" name="Completed URL"/>
+    <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
+    <Param val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
+    <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
+    <Param val="" valType="str" updates="None" name="End Message"/>
+    <Param val="{'participant': 'f&quot;{randint(0, 999999):06.0f}&quot;', 'session': '001'}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="True" valType="bool" updates="None" name="Force stereo"/>
+    <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
+    <Param val="" valType="str" updates="None" name="HTML path"/>
+    <Param val="" valType="str" updates="None" name="Incomplete URL"/>
+    <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
+    <Param val="[]" valType="list" updates="None" name="Resources"/>
+    <Param val="False" valType="bool" updates="None" name="Save csv file"/>
+    <Param val="False" valType="bool" updates="None" name="Save excel file"/>
+    <Param val="False" valType="bool" updates="None" name="Save hdf5 file"/>
+    <Param val="True" valType="bool" updates="None" name="Save log file"/>
+    <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
+    <Param val="True" valType="bool" updates="None" name="Save wide csv file"/>
+    <Param val="1" valType="num" updates="None" name="Screen"/>
+    <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
+    <Param val="False" valType="bool" updates="None" name="Show mouse"/>
+    <Param val="height" valType="str" updates="None" name="Units"/>
+    <Param val="" valType="str" updates="None" name="Use version"/>
+    <Param val="[1280, 720]" valType="list" updates="None" name="Window size (pixels)"/>
+    <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+    <Param val="" valType="str" updates="None" name="backgroundImg"/>
+    <Param val="avg" valType="str" updates="None" name="blendMode"/>
+    <Param val="$[-1,-1,-1]" valType="color" updates="None" name="color"/>
+    <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+    <Param val="100.1.1.1" valType="str" updates="None" name="elAddress"/>
+    <Param val="FILTER_LEVEL_2" valType="str" updates="None" name="elDataFiltering"/>
+    <Param val="FILTER_LEVEL_OFF" valType="str" updates="None" name="elLiveFiltering"/>
+    <Param val="EYELINK 1000 DESKTOP" valType="str" updates="None" name="elModel"/>
+    <Param val="ELLIPSE_FIT" valType="str" updates="None" name="elPupilAlgorithm"/>
+    <Param val="PUPIL_AREA" valType="str" updates="None" name="elPupilMeasure"/>
+    <Param val="1000" valType="num" updates="None" name="elSampleRate"/>
+    <Param val="False" valType="bool" updates="None" name="elSimMode"/>
+    <Param val="RIGHT_EYE" valType="str" updates="None" name="elTrackEyes"/>
+    <Param val="PUPIL_CR_TRACKING" valType="str" updates="None" name="elTrackingMode"/>
+    <Param val="FeupDroneImages_Protocol" valType="str" updates="None" name="expName"/>
+    <Param val="on Sync" valType="str" updates="None" name="exportHTML"/>
+    <Param val="None" valType="str" updates="None" name="eyetracker"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="gpAddress"/>
+    <Param val="4242" valType="num" updates="None" name="gpPort"/>
+    <Param val="ioHub" valType="str" updates="None" name="keyboardBackend"/>
+    <Param val="exp" valType="code" updates="None" name="logging level"/>
+    <Param val="('MIDDLE_BUTTON',)" valType="list" updates="None" name="mgBlink"/>
+    <Param val="CONTINUOUS" valType="str" updates="None" name="mgMove"/>
+    <Param val="0.5" valType="num" updates="None" name="mgSaccade"/>
+    <Param val="0.6" valType="num" updates="None" name="plConfidenceThreshold"/>
+    <Param val="True" valType="bool" updates="None" name="plPupilCaptureRecordingEnabled"/>
+    <Param val="" valType="str" updates="None" name="plPupilCaptureRecordingLocation"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="plPupilRemoteAddress"/>
+    <Param val="50020" valType="num" updates="None" name="plPupilRemotePort"/>
+    <Param val="1000" valType="num" updates="None" name="plPupilRemoteTimeoutMs"/>
+    <Param val="False" valType="bool" updates="None" name="plPupillometryOnly"/>
+    <Param val="psychopy_iohub_surface" valType="str" updates="None" name="plSurfaceName"/>
+    <Param val="" valType="str" updates="None" name="tbLicenseFile"/>
+    <Param val="" valType="str" updates="None" name="tbModel"/>
+    <Param val="60" valType="num" updates="None" name="tbSampleRate"/>
+    <Param val="" valType="str" updates="None" name="tbSerialNo"/>
+    <Param val="pyglet" valType="str" updates="None" name="winBackend"/>
+  </Settings>
+  <Routines>
+    <Routine name="trial">
+      <ImageComponent name="trialImage" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="$Image" valType="file" updates="set every repeat" name="image"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="" valType="str" updates="constant" name="mask"/>
+        <Param val="trialImage" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.593, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="0.2" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="256" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </ImageComponent>
+      <PolygonComponent name="stim_square" plugin="None">
+        <Param val="bottom-left" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="white" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="stim_square" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(-0.9, -0.5)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.1, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="0.2" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+    </Routine>
+    <Routine name="Welcome_Screen">
+      <TextComponent name="text" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="2" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Welcome!" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="Instructions_Screen">
+      <TextComponent name="instructions_text" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="instructions_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Images captured by a Drone at FEUP will be shown in rapid succession. &amp;#10;Pay attention to the images with minimal head movements if possible.&amp;#10;&amp;#10;Mentally count each instance of an image of a human laying down (red seater), which can show up in every possible position of the image.&amp;#10;&amp;#10;Press the SPACEBAR key when you are ready to start the Experiment." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="instructions_space" plugin="None">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="instructions_space" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="EOG_Screen">
+      <TextComponent name="EOG_text" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="EOG_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="16" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Blink you eyes every 1 to 2 seconds." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <PolygonComponent name="stim_square_EOG" plugin="None">
+        <Param val="bottom-left" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="white" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="stim_square_EOG" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(-0.9, -0.5)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.1, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="1" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="15" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+    </Routine>
+    <Routine name="EMG_Screen">
+      <TextComponent name="EMG_text" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="EMG_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="16" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Clench your jaw every 1 to 2 seconds." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <PolygonComponent name="stim_square_EMG" plugin="None">
+        <Param val="bottom-left" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="white" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="stim_square_EMG" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(-0.9, -0.5)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.1, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="1" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="15" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+    </Routine>
+    <Routine name="Coding_Trials">
+      <CodeComponent name="code" plugin="None">
+        <Param val="import pandas as pd&amp;#10;import random&amp;#10;&amp;#10;# ------------------------------------------- .xlsx file path -------------------------------------------&amp;#10;&amp;#10;file_path = 'C:/Users/migue/OneDrive/Ambiente de Trabalho/Tese/AcquisitionProtocols/FEUP_droneImages.xlsx'&amp;#10;" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="import * as pd from 'pandas';&amp;#10;import * as random from 'random';&amp;#10;file_path = &quot;C:/Users/migue/OneDrive/Ambiente de Trabalho/IEEE project/EEG-Situ_VS_EEG-fMRI/stims.xlsx&quot;;&amp;#10;" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="imgs_file = pd.read_excel(file_path)&amp;#10;&amp;#10;permutation = np.random.permutation(imgs_file.index)&amp;#10;shuffled_df = imgs_file.loc[permutation]&amp;#10;&amp;#10;img = shuffled_df['Image'].values" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="trial_BlockScreen">
+      <TextComponent name="trial_Blocktext" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="trial_Blocktext" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="When you are ready to start a trial number, press the SPACEBAR!" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="trial_space" plugin="None">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="trial_space" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="GoodBye_Screen">
+      <TextComponent name="goddbye_text" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="goddbye_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="4" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Thank you for participating!" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="fixation_cross">
+      <PolygonComponent name="fix_cross" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="0.5" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="fix_cross" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="cross" valType="str" updates="None" name="shape"/>
+        <Param val="(0.1, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="3" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="Welcome_Screen"/>
+    <Routine name="Instructions_Screen"/>
+    <Routine name="EOG_Screen"/>
+    <Routine name="EMG_Screen"/>
+    <Routine name="Coding_Trials"/>
+    <LoopInitiator loopType="TrialHandler" name="trial_block">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="12" valType="num"/>
+      <Param name="name" updates="None" val="trial_block" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="fixation_cross"/>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_021_2x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_011_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_012_1x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_004_2x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_031_1x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_015_1x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_033_1x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_023_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_011_1x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_027_1x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_015_1x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_013_1x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_008_1x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_025_2x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_005_2x2.jpg', 'Condition': 'Target', 'Centroid': ['x=1011, y=124'], 'Visual_angle': ['x=21.842,y=-39.829'], 'Stimulus_type': 'RVF_BVF'}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_009_1x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_019_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_001_1x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_023_1x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_028_1x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_015_1x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_021_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_027_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_024_1x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_015_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_023_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_016_2x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_028_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_007_2x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_043_1x2.jpg', 'Condition': 'Target', 'Centroid': ['x=785, y=408'], 'Visual_angle': ['x=7.281,y=-14.295'], 'Stimulus_type': 'CVF_BVF'}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_006_2x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_006_1x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_002_2x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_023_1x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_033_2x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_011_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_031_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_017_1x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_034_2x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_019_1x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_033_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_029_2x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_025_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_023_2x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_020_1x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_020_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_017_1x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_031_1x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_016_1x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_015_2x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_035_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_015_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_026_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_021_1x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_031_2x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_031_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_027_1x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_024_1x1.jpg', 'Condition': 'Target', 'Centroid': ['x=704, y=521'], 'Visual_angle': ['x=2.062,y=-4.136'], 'Stimulus_type': 'CVF_CVF'}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_032_2x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_032_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_012_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_009_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_024_2x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_031_1x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_019_1x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_011_2x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_001_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_018_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_042_2x2.jpg', 'Condition': 'Target', 'Centroid': ['x=114, y=990'], 'Visual_angle': ['x=-35.952,y=38.03'], 'Stimulus_type': 'LVF_TVF'}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_028_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_016_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_022_1x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_016_1x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_035_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_026_2x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_026_1x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_013_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_010_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_030_2x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_010_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_020_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_004_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_001_2x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_022_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_024_1x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_001_1x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_004_1x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_012_1x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_018_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_033_1x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_006_1x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_020_2x3.jpg', 'Condition': 'Target', 'Centroid': ['x=1213, y=229'], 'Visual_angle': ['x=34.856,y=-30.388'], 'Stimulus_type': 'RVF_BVF'}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_041_1x2.jpg', 'Condition': 'Target', 'Centroid': ['x=59, y=58'], 'Visual_angle': ['x=-39.495,y=-45.762'], 'Stimulus_type': 'LVF_BVF'}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_008_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_051_2x1.jpg', 'Condition': 'Target', 'Centroid': ['x=936, y=884'], 'Visual_angle': ['x=17.009,y=28.5'], 'Stimulus_type': 'RVF_TVF'}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_027_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_022_2x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_025_1x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_005_1x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_019_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_012_1x2.jpg', 'Condition': 'Target', 'Centroid': ['x=337, y=722'], 'Visual_angle': ['x=-21.584,y=13.936'], 'Stimulus_type': 'LVF_TVF'}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_005_1x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_003_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_010_1x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_030_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_008_1x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_025_1x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_034_1x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_011_1x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_025_1x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_002_2x2.jpg', 'Condition': 'Target', 'Centroid': ['x=691, y=136'], 'Visual_angle': ['x=1.224,y=-38.75'], 'Stimulus_type': 'CVF_BVF'}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_005_2x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_032_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_009_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_004_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_007_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_012_2x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_018_2x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_029_1x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_004_1x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_001_1x3.jpg', 'Condition': 'Target', 'Centroid': ['x=357, y=691'], 'Visual_angle': ['x=-20.295,y=11.148'], 'Stimulus_type': 'LVF_TVF'}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_017_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_004_1x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_002_1x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_001_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_035_1x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_002_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_020_1x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_024_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_028_2x3.jpg', 'Condition': 'Target', 'Centroid': ['x=699, y=309'], 'Visual_angle': ['x=1.74,y=-23.196'], 'Stimulus_type': 'CVF_BVF'}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_013_2x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_033_1x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_032_1x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_014_2x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_009_1x2.jpg', 'Condition': 'Target', 'Centroid': ['x=393, y=821'], 'Visual_angle': ['x=-17.976,y=22.836'], 'Stimulus_type': 'LVF_TVF'}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_024_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_022_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_002_1x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_003_1x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_032_1x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_017_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_011_1x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_028_1x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_028_1x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_007_1x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_014_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_032_1x1.jpg', 'Condition': 'Target', 'Centroid': ['x=1316, y=816'], 'Visual_angle': ['x=41.493,y=22.387'], 'Stimulus_type': 'RVF_TVF'}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_025_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_029_1x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_016_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_050_2x2.jpg', 'Condition': 'Target', 'Centroid': ['x=770, y=115'], 'Visual_angle': ['x=6.314,y=-40.638'], 'Stimulus_type': 'CVF_BVF'}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_007_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_012_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_010_1x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_023_1x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_002_1x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_013_1x3.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_008_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_016_1x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_036_1x2.jpg', 'Condition': 'Target', 'Centroid': ['x=1263, y=990'], 'Visual_angle': ['x=38.078,y=38.03'], 'Stimulus_type': 'RVF_TVF'}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_027_1x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_021_1x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_029_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_030_2x1.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}, {'Image': 'C:\\Users\\migue\\OneDrive\\Ambiente de Trabalho\\Tese\\AcquisitionProtocols\\CroppedDronePhotos\\feupDrone_033_2x2.jpg', 'Condition': 'NonTarget', 'Centroid': 0.0, 'Visual_angle': 0.0, 'Stimulus_type': 0.0}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="C:/Users/migue/OneDrive/Ambiente de Trabalho/Tese/AcquisitionProtocols/FEUP_droneImages.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="trials"/>
+    <Routine name="trial_BlockScreen"/>
+    <LoopTerminator name="trial_block"/>
+    <Routine name="GoodBye_Screen"/>
+  </Flow>
+</PsychoPy2experiment>

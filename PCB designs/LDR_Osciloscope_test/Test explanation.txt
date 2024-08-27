@@ -1,0 +1,7 @@
+Neste teste foi averiguada a diferença no rúido entre alimentar o cicuito do LDR com uma bateria de Litio (3.7V) e um cabo USB (5V). Verificou-se que nao existe uma diferença significativa no sinal. Verifica-se rúido mas este vem da luz ligada (rede elétrica) do C1 e é constante nas duas ocasiões (~ 100mv Amplitude e 100Hz de freq). É de notar que este teste foi feito diretamente no divisor de tensão e não antes do LDO.
+
+O circuito foi testado com a luz do C1 desligada mas luz do telemóvel ligada e o ruído era muito baixo. Isto pois a componente de 100Hz desapareceu.
+
+
+
+Falta testar no EEG, pois este tem um filtro NOTCH em software.
