@@ -36,7 +36,7 @@ BC - Best channels selected for each ERP
 
 <img width="800" alt="T_vs_NT" src="https://github.com/user-attachments/assets/849e34cd-0663-4ad7-a9ab-55099cc1668c">
 
-***Right Visual Field vs Left Visual Field target classification:***
+***Right Visual Field (RVF) vs Left Visual Field (LVF) Target classification:***
 
 <img width="800" alt="n2pc" src="https://github.com/user-attachments/assets/8350db4e-2f95-4234-90a2-a9059226e7dc">
 
