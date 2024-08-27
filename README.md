@@ -48,7 +48,7 @@ BC - Best channels selected for each ERP
 
 ## **Conclusion:**
 
-Because the results were identical and sometimes even better in the Testing images than in the Training images, these indicate that this type of high-frame-rate BCI system (hybrid, using human observers and ML techniques on the measured brain potentials) seems to generalize well when using N2pc and P3 ERPs. 
+Because the results were identical and sometimes even better in the Testing images than in the Training images, these indicate that this type of high-frame-rate BCI system (hybrid, using human observers and ML techniques on the measured brain potentials) seems to generalize well when using N2pc and P3 ERPs. These results ensure the system can be extrapolated to novel environments and humans without losing performance, or in other words, in search and rescue images that neither the brain nor the ML models have seen.
 
 ## **Hardware development:**
 
