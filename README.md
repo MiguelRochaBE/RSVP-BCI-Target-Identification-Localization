@@ -42,7 +42,7 @@ BC - Best channels selected for each ERP
 
 ***Lateral Target centroid estimation (Neural Network) for one subject:***
 
-<img width="800" alt="S1_x_estim" src="[https://github.com/user-attachments/assets/8350db4e-2f95-4234-90a2-a9059226e7dc](https://github.com/user-attachments/assets/3d45e906-08b9-4eeb-a15f-b13ca9718b30)">
+<img width="800" alt="S1_x_estim" src="https://github.com/user-attachments/assets/3d45e906-08b9-4eeb-a15f-b13ca9718b30">
 
 **Conclusion:**
 
@@ -52,5 +52,7 @@ Because the results were identical and sometimes even better in the Testing imag
 
 A PCB was also designed to interface the EEG amplifier and the monitor where the images are presented, thus enabling the segmentation of each response in the continuous EEG. Additionally, the PCB encapsulation and piece to fix the circuit to the monitor was also designed an 3D printed.
 
-![PCBonMonitor](https://github.com/user-attachments/assets/69a51014-9f9b-4e80-9d57-2c6a6e2aa97a)
+<img width="600" alt="PCBonMonitor" src="https://github.com/user-attachments/assets/69a51014-9f9b-4e80-9d57-2c6a6e2aa97a">
+
+
 
