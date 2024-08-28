@@ -1,6 +1,6 @@
 # RSVP-BCI-Target-Identification-Localization
 
-Project developed during my Master's Thesis in Biomedical Engineering at FEUP (FEUP_Dissertation_MiguelRocha_2024)
+Project developed during my Master's Thesis in Biomedical Engineering at FEUP (FEUP_Dissertation_MiguelRocha_2024). The EEG data is not available here since the *.edf* files are way too big.
 
 Some concepts detailed here were firstly tested with an online dataset comprising EEG data recorded in a similar paradigm, whose study is presented in PTL.pdf.
 
