@@ -1,7 +1,5 @@
 # RSVP-BCI-Target-Identification-Localization
 
-https://www.techrxiv.org/article_git_access_bridges/web_hook/MZHLj5OWdcET9-kPd9ryxQ
-
 PrePrint paper: https://www.techrxiv.org/users/911014/articles/1284719-generalizing-visual-search-an-high-throughput-bci-for-target-identification-and-localization-in-aerial-imagery-in-search-and-rescue-scenarios
 
 Project developed during my Master's Thesis in Biomedical Engineering at FEUP (FEUP_Dissertation_MiguelRocha_2024). The EEG data is not available here since the *.edf* files are way too big.
